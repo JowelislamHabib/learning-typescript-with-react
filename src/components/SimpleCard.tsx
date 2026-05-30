@@ -1,6 +1,10 @@
-import React from "react";
+interface SimpleCardProps {
+  name: string;
+  price: number;
+  isSpecial?: boolean;
+}
 
-const SimpleCard = ({ name, price, isSpecial = false }) => {
+const SimpleCard = ({ name, price, isSpecial = false }: SimpleCardProps) => {
   return (
     <div>
       <h2>{name}</h2>
