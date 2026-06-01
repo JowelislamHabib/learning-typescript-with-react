@@ -1,11 +1,11 @@
 import "./App.css";
-import PostCard from "./components/PostCard";
 import PostList from "./components/PostList";
-
 function App() {
   return (
-    <div>
-      <h1>Learning TypeScript with React</h1>
+    <div className="container mx-auto py-24">
+      <h1 className="text2xl font-bold text-center text-gray-800">
+        Learning TypeScript with React
+      </h1>
       <PostList />
     </div>
   );

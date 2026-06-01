@@ -1,12 +1,15 @@
-import React from "react";
+type Props = {
+  title: string;
+  body: string;
+}
 
-const PostCard = (props: { title: string; desc: string }) => {
+const PostCard = (props: Props) => {
   return (
     <div>
       <div className="card bg-base-100 w-96 shadow-sm">
         <div className="card-body">
           <h2 className="card-title">{props.title}</h2>
-          <p>{props.desc}</p>
+          <p>{props.body}</p>
           <div className="card-actions justify-end">
             {/* <button className="btn btn-primary">Buy Now</button> */}
           </div>
