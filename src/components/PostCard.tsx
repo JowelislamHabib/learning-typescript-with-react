@@ -1,9 +1,6 @@
-type Props = {
-  title: string;
-  body: string;
-}
+import type { IPostResponse } from "../types/posts.interface";
 
-const PostCard = (props: Props) => {
+const PostCard = (props: IPostResponse) => {
   return (
     <div>
       <div className="card bg-base-100 w-96 shadow-sm">
